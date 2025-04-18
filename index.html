@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="utf-8" />
+    <meta name="author" content="Matei Hanganu" />
+    <meta name="description" content="Carte de vizita" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carte de vizita</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            background-color: burlywood;
+            width: 90%;
+            max-width: 360px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+            .card img {
+                width: 290px;
+                height: 290px;
+                object-fit: cover;
+                border-radius: 25%;
+                margin-top: 20px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .card img:hover{
+                transform: scale(1.05);
+            }
+
+        @media (max-width: 400px) {
+            .card {
+                padding: 15px;
+                font-size: 14px;
+            }
+
+                .card img {
+                    width: 240px;
+                    height: 240px;
+                }
+        }
+
+        .button {
+            margin-top: 15px;
+            display: inline-block;
+            background-color: saddlebrown;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 35px;
+            transition: background 0.4s ease;
+        }
+
+            .button:hover {
+                background-color: sandybrown;
+            }
+
+        .social-links {
+            margin-top: 15px;
+        }
+
+            .social-links a {
+                margin: 0 10px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+                .social-links a.Instagram {
+                    color: #E1306C;
+                }
+
+                .social-links a.WhatsApp {
+                    color: #25D366;
+                }
+
+                .social-links a:hover {
+                    text-decoration: underline;
+                }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="PozaProfil.jpg" alt="Poza mea" />
+        <h2>Matei Hanganu</h2>
+        <p style="font-style: italic;">Student • Web Enthusiast • Creative Thinker</p>
+        <p>Email: mateiuhcluj@yahoo.com</p>
+        <a class="button"
+           aria-label="Trimite-mi un email pe Yahoo"
+           href="https://compose.mail.yahoo.com/?to=mateiuhcluj@yahoo.com&subject=Salut!&body=Scrie-mi%20un%20mesaj..."
+           target="_blank"
+           title="Trimite-mi un email pe Yahoo">
+            Contactează-mă
+        </a>
+        <div class="social-links">
+            <a href="https://instagram.com/matei.hanganu" target="_blank" class="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://wa.me/40774403422" target="_blank" class="WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+    </div>
+</body>
+</html>
